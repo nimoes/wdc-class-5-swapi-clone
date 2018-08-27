@@ -29,3 +29,7 @@ makemigrations:
 createsuperuser:
 	@echo $(TAG)Create Superuser$(END)
 	$(call django-command, createsuperuser)
+
+# test:
+#     @echo $(TAG)Running Tests$(END)
+#     $(call django-command, test swapi)
