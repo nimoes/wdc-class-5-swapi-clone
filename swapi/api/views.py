@@ -138,7 +138,7 @@ def people_detail_view(request, people_id):
             return JsonResponse({
                 'msg': 'Could not find planet with id: {}'.format(planet_id),
                 'success': False
-            })
+            }, status=404)
 
         # check if height and mass are integers
         try:
